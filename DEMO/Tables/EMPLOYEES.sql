@@ -11,6 +11,7 @@ CREATE TABLE demo.employees (
   manager_id NUMBER(6),
   department_id NUMBER(4),
   comments VARCHAR2(20 BYTE),
+  eme_phone_number VARCHAR2(20 BYTE),
   address VARCHAR2(20 BYTE),
   employee_code VARCHAR2(20 BYTE),
   CONSTRAINT emp_email_uk UNIQUE (email),
