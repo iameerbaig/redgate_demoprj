@@ -1,0 +1,1 @@
+CREATE INDEX demo.emp_manager_ix ON demo.employees(manager_id);

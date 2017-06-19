@@ -1,0 +1,1 @@
+CREATE INDEX demo.loc_state_province_ix ON demo.locations(state_province);

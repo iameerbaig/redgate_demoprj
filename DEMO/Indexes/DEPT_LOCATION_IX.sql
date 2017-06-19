@@ -1,0 +1,1 @@
+CREATE INDEX demo.dept_location_ix ON demo.departments(location_id);

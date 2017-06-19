@@ -1,0 +1,1 @@
+CREATE OR REPLACE SYNONYM demo_schema.employees FOR demo.employees;

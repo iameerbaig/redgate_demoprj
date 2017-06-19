@@ -1,0 +1,1 @@
+CREATE INDEX demo.jhist_job_ix ON demo.job_history(job_id);
