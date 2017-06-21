@@ -13,6 +13,7 @@ CREATE TABLE demo.employees (
   comments VARCHAR2(20 BYTE),
   eme_phone_number VARCHAR2(20 BYTE),
   address VARCHAR2(20 BYTE),
+  status VARCHAR2(20 BYTE),
   employee_code VARCHAR2(20 BYTE),
   CONSTRAINT emp_email_uk UNIQUE (email),
   CONSTRAINT emp_emp_id_pk PRIMARY KEY (employee_id),

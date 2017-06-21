@@ -6,6 +6,7 @@ CREATE OR REPLACE PROCEDURE demo_schema.SP_EMPLOYEE_SELECT_BYPK
         p_FIRST_NAME            OUT  EMPLOYEES.FIRST_NAME%type, 
         p_DEPARTMENT_ID  OUT  EMPLOYEES.DEPARTMENT_ID %type, 
         p_eme_phone_number  OUT  EMPLOYEES.eme_phone_number %type, 
+        p_status  OUT  EMPLOYEES.status %type, 
 		p_employee_code OUT EMPLOYEES.employee_code%type              
      ) 
 AS 
@@ -16,6 +17,7 @@ BEGIN
            FIRST_NAME                     , 
 		   DEPARTMENT_ID           ,
        eme_phone_number,
+       status,
 		   employee_code
     INTO   
            p_JOB_ID                    , 
@@ -23,6 +25,7 @@ BEGIN
            p_FIRST_NAME                     , 
            p_DEPARTMENT_ID           ,
            p_eme_phone_number,
+           p_status,
 		   p_employee_code
     FROM   EMPLOYEES
     WHERE  EMPLOYEE_ID  = p_EMPLOYEE_ID  ; 
